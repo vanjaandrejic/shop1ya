@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./Navigation.module.css";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faHomeAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   return (
@@ -8,16 +11,17 @@ const Navigation = () => {
       <nav>
         <ul>
           <li>
-            <a href="">About</a>
+            <NavLink to="/">
+              <FontAwesomeIcon icon={faHomeAlt} />
+            </NavLink>
           </li>
           <li>
-            <a href="">Shop</a>
+            <NavLink to="/cart">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </NavLink>
           </li>
           <li>
-            <a href="">Cart</a>
-          </li>
-          <li>
-            <a href="">Account</a>
+            <NavLink to="/auth">Account</NavLink>
           </li>
         </ul>
       </nav>
