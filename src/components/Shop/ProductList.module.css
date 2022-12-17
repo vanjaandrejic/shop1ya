@@ -1,0 +1,8 @@
+.container {
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 69, 99);
+}
