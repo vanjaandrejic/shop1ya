@@ -18,8 +18,6 @@
 
 .header ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: baseline;
 }
@@ -30,6 +28,15 @@
 
 .header a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.header a:active,
+.header a:hover,
+.header a.active {
+  color: rgb(0, 128, 79);
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid rgb(0, 128, 79);
 }

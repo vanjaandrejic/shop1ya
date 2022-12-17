@@ -1,4 +1,6 @@
 .main {
     background-color: aquamarine;
     height: 120vh;
+    width: 85vw;
+    margin: auto;
 }
