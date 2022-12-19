@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import classes from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,17 +9,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
-  const [active, setActive] = useState(false);
-
-  const changeClass = () => {
-    console.log(window.scrollY);
-  };
-  changeClass();
-
   return (
     <header className={`${classes.header} + ${classes.navactive}`}>
       <NavLink to="/" className={classes.logo}>
-        Shop1ya
+        SHOP1YA
       </NavLink>
       <nav>
         <ul>

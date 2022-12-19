@@ -1,6 +1,7 @@
 .main {
-    background-color: aquamarine;
-    height: 120vh;
-    width: 85vw;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    height: 100vh;
 }
