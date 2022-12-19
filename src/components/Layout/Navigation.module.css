@@ -1,19 +1,21 @@
 .header {
   width: 100%;
   height: 5rem;
-  background-color: #202020;
-  box-shadow: 0 4px 4px #888888;
+  background-color: #303030;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5% 3%;
-  opacity: 0.9;
+  padding: 1.5rem 3rem;
   position: fixed;
+  z-index: 1;
+  opacity: 0.9;
+  box-shadow: 1px 1px 12px 1px rgb(0, 128, 79);
 }
 
 .logo {
   font-size: 1.5rem;
   color: white;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .header ul {
@@ -31,6 +33,7 @@
   color: #ffffff;
   font-weight: bold;
   padding-bottom: 4px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .header a:active,

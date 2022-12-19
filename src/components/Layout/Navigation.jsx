@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import classes from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,8 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
+  const [active, setActive] = useState(false);
+
+  const changeClass = () => {
+    console.log(window.scrollY);
+  };
+  changeClass();
+
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} + ${classes.navactive}`}>
       <NavLink to="/" className={classes.logo}>
         Shop1ya
       </NavLink>
@@ -23,7 +31,7 @@ const Navigation = () => {
                 isActive ? classes.active : undefined
               }
             >
-              <FontAwesomeIcon icon={faHomeAlt} size="lg"/>
+              <FontAwesomeIcon icon={faHomeAlt} size="lg" />
             </NavLink>
           </li>
           <li>
@@ -33,7 +41,7 @@ const Navigation = () => {
                 isActive ? classes.active : undefined
               }
             >
-              <FontAwesomeIcon icon={faCartShopping} size="lg"/>
+              <FontAwesomeIcon icon={faCartShopping} size="lg" />
             </NavLink>
           </li>
           <li>
@@ -43,7 +51,7 @@ const Navigation = () => {
                 isActive ? classes.active : undefined
               }
             >
-              <FontAwesomeIcon icon={faUser} size="lg"/>
+              <FontAwesomeIcon icon={faUser} size="lg" />
             </NavLink>
           </li>
         </ul>
