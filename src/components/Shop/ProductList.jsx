@@ -15,6 +15,7 @@ const ProductList = () => {
   const productList = DUMMY_DATA.map((product) => (
     <Product
       key={product.id}
+      id={product.id}
       name={product.name}
       title={product.title}
       price={product.price}

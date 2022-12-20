@@ -7,6 +7,7 @@ import {
   faHomeAlt,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import CartButton from "./CartButton";
 
 const Navigation = () => {
   return (
@@ -28,22 +29,22 @@ const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/cart"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              <FontAwesomeIcon icon={faCartShopping} size="lg" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/auth"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
               <FontAwesomeIcon icon={faUser} size="lg" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/cart"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              <CartButton />
             </NavLink>
           </li>
         </ul>

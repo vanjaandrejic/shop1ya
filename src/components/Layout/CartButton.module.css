@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: rgb(0, 128, 79);
+  padding: 12px 10px 12px 10px;
+  border-radius: 4rem;
+  display: inline-block;
+}
+
+.badge {
+  padding: 0 2px 0 2px;
+}
+
+.wrapper:hover {
+  background-color: transparent;
+}

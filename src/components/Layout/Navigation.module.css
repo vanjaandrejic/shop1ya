@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   height: 5rem;
-  background-color: #303030;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +8,8 @@
   position: fixed;
   z-index: 1;
   opacity: 0.9;
-  box-shadow: 1px 1px 12px 1px rgb(0, 128, 79);
+  background-color: #232323;
+  /* box-shadow: 1px 1px 12px 1px rgb(0, 128, 79); */
 }
 
 .logo {
@@ -41,5 +41,4 @@
 .header a.active {
   color: rgb(0, 128, 79);
   transition: all 0.2s ease-in-out;
-  border-bottom: 3px solid rgb(0, 128, 79);
 }
