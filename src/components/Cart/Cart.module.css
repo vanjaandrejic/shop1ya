@@ -1,7 +1,46 @@
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #303030;
   height: 100vh;
+}
+
+.total {
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.total span {
+  padding: 0 1rem;
+}
+
+.total span:nth-child(2) {
+  color: rgb(0, 128, 79);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.actions button {
+  padding: 0.5rem;
+  width: 6rem;
+  margin: 0.5rem 0.5rem;
+  text-align: center;
+  background-color: rgb(0, 128, 79);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.actions button:nth-child(1) {
+  background-color: darkgray;
+  color: #303030;
 }

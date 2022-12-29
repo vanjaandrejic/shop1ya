@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  background-color: #242424;
+  padding: 1.2rem;
+  margin: 1rem;
+  color: white;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.summary {
+  margin: auto;
+  padding: 0 1.2rem;
+  font-size: 1.6rem;
+}
+
+.price {
+  color: rgb(0, 128, 79);
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.actions {
+  margin: auto;
+}
+
+.actions button {
+  padding: 0.5rem;
+  width: 2rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  background-color: rgb(0, 128, 79);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}

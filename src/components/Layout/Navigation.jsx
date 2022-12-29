@@ -2,11 +2,7 @@ import React from "react";
 import classes from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartShopping,
-  faHomeAlt,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHomeAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 import CartButton from "./CartButton";
 
 const Navigation = () => {
@@ -38,12 +34,7 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/cart"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
+            <NavLink to="/cart">
               <CartButton />
             </NavLink>
           </li>

@@ -49,7 +49,7 @@ const Product = (props) => {
         step="1"
         defaultValue="1"
       />
-      <Button onClick={addHandler} text="+Add" />
+      <Button onAdd={addHandler} text="+Add" />
       {!amountIsValid && <p>Please enter a valid amount!</p>}
     </div>
   );

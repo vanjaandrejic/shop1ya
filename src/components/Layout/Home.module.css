@@ -26,6 +26,7 @@
 
 .text h1:hover {
   animation: float 1s ease-in-out;
+  cursor: pointer;
 }
 
 .text h4 {

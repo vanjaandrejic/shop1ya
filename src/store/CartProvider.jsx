@@ -16,6 +16,7 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
+  console.log(defaultCartState);
   return defaultCartState;
 };
 
